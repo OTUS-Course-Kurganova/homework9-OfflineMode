@@ -11,6 +11,13 @@
 		18F85FB22A05393A0087EF81 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85FB12A05393A0087EF81 /* ContentView.swift */; };
 		18F85FB42A05393B0087EF81 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F85FB32A05393B0087EF81 /* Assets.xcassets */; };
 		18F85FB72A05393B0087EF81 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18F85FB62A05393B0087EF81 /* Preview Assets.xcassets */; };
+		18F85FBF2A0539750087EF81 /* DogCatScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85FBE2A0539750087EF81 /* DogCatScreen.swift */; };
+		18F85FC12A053A2C0087EF81 /* DogCatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85FC02A053A2C0087EF81 /* DogCatViewModel.swift */; };
+		18F85FC42A0540790087EF81 /* PickerScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85FC32A0540790087EF81 /* PickerScreen.swift */; };
+		18F85FC72A0542BE0087EF81 /* RecognitionScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85FC62A0542BE0087EF81 /* RecognitionScreen.swift */; };
+		18F85FCB2A0551ED0087EF81 /* ImageClassifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85FCA2A0551ED0087EF81 /* ImageClassifier.swift */; };
+		18F85FCE2A0554A60087EF81 /* Classifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18F85FCD2A0554A60087EF81 /* Classifier.swift */; };
+		18F85FD02A0583570087EF81 /* CatsDogsImageClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = 18F85FCF2A0583570087EF81 /* CatsDogsImageClassifier.mlmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +26,13 @@
 		18F85FB12A05393A0087EF81 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		18F85FB32A05393B0087EF81 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18F85FB62A05393B0087EF81 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		18F85FBE2A0539750087EF81 /* DogCatScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCatScreen.swift; sourceTree = "<group>"; };
+		18F85FC02A053A2C0087EF81 /* DogCatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DogCatViewModel.swift; sourceTree = "<group>"; };
+		18F85FC32A0540790087EF81 /* PickerScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PickerScreen.swift; sourceTree = "<group>"; };
+		18F85FC62A0542BE0087EF81 /* RecognitionScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecognitionScreen.swift; sourceTree = "<group>"; };
+		18F85FCA2A0551ED0087EF81 /* ImageClassifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageClassifier.swift; sourceTree = "<group>"; };
+		18F85FCD2A0554A60087EF81 /* Classifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Classifier.swift; sourceTree = "<group>"; };
+		18F85FCF2A0583570087EF81 /* CatsDogsImageClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = CatsDogsImageClassifier.mlmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,6 +65,9 @@
 		18F85FAE2A05393A0087EF81 /* hwCoreML */ = {
 			isa = PBXGroup;
 			children = (
+				18F85FC52A0542860087EF81 /* Recognition */,
+				18F85FC22A0540630087EF81 /* PickerScreen */,
+				18F85FBD2A05394B0087EF81 /* DogCatScreen */,
 				18F85FAF2A05393A0087EF81 /* hwCoreMLApp.swift */,
 				18F85FB12A05393A0087EF81 /* ContentView.swift */,
 				18F85FB32A05393B0087EF81 /* Assets.xcassets */,
@@ -65,6 +82,34 @@
 				18F85FB62A05393B0087EF81 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		18F85FBD2A05394B0087EF81 /* DogCatScreen */ = {
+			isa = PBXGroup;
+			children = (
+				18F85FBE2A0539750087EF81 /* DogCatScreen.swift */,
+				18F85FC02A053A2C0087EF81 /* DogCatViewModel.swift */,
+			);
+			path = DogCatScreen;
+			sourceTree = "<group>";
+		};
+		18F85FC22A0540630087EF81 /* PickerScreen */ = {
+			isa = PBXGroup;
+			children = (
+				18F85FC32A0540790087EF81 /* PickerScreen.swift */,
+			);
+			path = PickerScreen;
+			sourceTree = "<group>";
+		};
+		18F85FC52A0542860087EF81 /* Recognition */ = {
+			isa = PBXGroup;
+			children = (
+				18F85FCF2A0583570087EF81 /* CatsDogsImageClassifier.mlmodel */,
+				18F85FC62A0542BE0087EF81 /* RecognitionScreen.swift */,
+				18F85FCA2A0551ED0087EF81 /* ImageClassifier.swift */,
+				18F85FCD2A0554A60087EF81 /* Classifier.swift */,
+			);
+			path = Recognition;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,7 +182,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18F85FCB2A0551ED0087EF81 /* ImageClassifier.swift in Sources */,
+				18F85FCE2A0554A60087EF81 /* Classifier.swift in Sources */,
 				18F85FB22A05393A0087EF81 /* ContentView.swift in Sources */,
+				18F85FBF2A0539750087EF81 /* DogCatScreen.swift in Sources */,
+				18F85FD02A0583570087EF81 /* CatsDogsImageClassifier.mlmodel in Sources */,
+				18F85FC42A0540790087EF81 /* PickerScreen.swift in Sources */,
+				18F85FC72A0542BE0087EF81 /* RecognitionScreen.swift in Sources */,
+				18F85FC12A053A2C0087EF81 /* DogCatViewModel.swift in Sources */,
 				18F85FB02A05393A0087EF81 /* hwCoreMLApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
